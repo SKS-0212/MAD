@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu_bar"/>
+
+    <LinearLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="0dp"
+            android:layout_margin="5px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="0dp"
+            android:layout_margin="5px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="About"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/contact_button"
+            android:layout_width="0dp"
+            android:layout_margin="5px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="Contact"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</RelativeLayout>

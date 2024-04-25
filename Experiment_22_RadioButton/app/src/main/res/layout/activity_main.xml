@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/editTextUID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:hint="UID (alphanumeric)"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_below="@id/editTextUID"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGender"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branch"
+        android:layout_below="@id/radioGroupGender"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBranch"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IT"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonCSE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CSE"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewSubjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subjects"
+        android:layout_below="@id/radioGroupBranch"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxDSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DSA"
+        android:layout_below="@id/textViewSubjects"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxMAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAD"
+        android:layout_below="@id/checkBoxDSA"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CC"
+        android:layout_below="@id/checkBoxMAD"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxQuantum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantum"
+        android:layout_below="@id/checkBoxCC"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:layout_below="@id/checkBoxQuantum"/>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/checkBoxJava"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

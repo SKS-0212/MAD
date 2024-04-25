@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: " />
+
+    <TextView
+        android:id="@+id/textViewUID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UID: " />
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender: " />
+
+    <TextView
+        android:id="@+id/textViewBranch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Branch: " />
+
+    <TextView
+        android:id="@+id/textViewSubjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subjects: " />
+
+</LinearLayout>

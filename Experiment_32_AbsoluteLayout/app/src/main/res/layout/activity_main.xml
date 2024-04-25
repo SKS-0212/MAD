@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AbsoluteLayout Example"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_x="16dp"
+        android:layout_y="16dp"
+        />
+
+    <!-- Setting up TextViews -->
+    <TextView android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="100px"
+        android:layout_y="300px"
+        android:text="Tanisha Singh" />
+
+    <TextView
+        android:id="@+id/subHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="120px"
+        android:layout_y="350px"
+        android:text="21BCS9213" />
+</AbsoluteLayout>

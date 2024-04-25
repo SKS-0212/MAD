@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:ignore="ExtraText">
+
+    <!-- Email Address -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ritiksingh1859@gmail.com"
+        android:textSize="20sp"/>
+
+    Subject
+    <EditText
+        android:id="@+id/subject_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- Message -->
+    <EditText
+        android:id="@+id/message_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:minLines="3"/>
+
+    <!-- Send Button -->
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:text="Send"
+        android:textColor="@android:color/white"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textSize="16sp"
+        android:radius="15dp"/>
+</LinearLayout>
